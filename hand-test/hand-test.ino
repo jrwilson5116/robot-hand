@@ -55,7 +55,7 @@ void thumbsUp(){
   thumb.write(0);
 }
 
-void metal(){
+void peace(){
   index.write(0);
   middle.write(0);
   ring.write(180);
@@ -71,7 +71,7 @@ void callMe(){
   thumb.write(0);
 }
 
-void horns(){
+void metal(){
   index.write(0);
   middle.write(180);
   ring.write(180);
