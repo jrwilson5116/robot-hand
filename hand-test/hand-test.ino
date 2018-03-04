@@ -9,7 +9,6 @@ Servo middle;
 Servo ring;
 Servo pinky;
 Servo thumb;
-Servo thumb2;
 
 void setup() {
   /*attach servo signal 
@@ -20,7 +19,6 @@ void setup() {
   ring.attach(6);
   pinky.attach(8);
   thumb.attach(10);
-  thumb2.attach(12);
     
   //for first time setup
   //  index.write(90);
@@ -28,7 +26,6 @@ void setup() {
   //  ring.write(90);
   //  pinky.write(90);
   //  thumb.write(90);
-   //   thumb2.write(90);
       
 }
 
@@ -48,7 +45,6 @@ void loop() {
 
 
 void openHand(){
-  thumb2.write(0);
   thumb.write(0);
   index.write(0);
   middle.write(0);
@@ -70,7 +66,6 @@ void thumbsUp(){
   middle.write(180);
   ring.write(180);
   pinky.write(180);
-  thumb2.write(0);
   thumb.write(0);
 }
 
@@ -96,7 +91,6 @@ void metal(){
   middle.write(180);
   ring.write(180);
   pinky.write(0);
-  thumb2.write(180);
   thumb.write(180); 
 }
 
@@ -105,7 +99,6 @@ void theFinger(){
   middle.write(0);
   ring.write(180);
   pinky.write(180);
-  thumb2.write(180);
   thumb.write(180);
 }
 
