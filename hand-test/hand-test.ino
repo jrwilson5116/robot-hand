@@ -14,32 +14,34 @@ void setup() {
   /*attach servo signal 
    * lines to arduino lines
    */
-  index.attach(2);
+  index.attach(8);
   middle.attach(4);
-  ring.attach(6);
-  pinky.attach(8);
+  ring.attach(2);
+  pinky.attach(6);
   thumb.attach(10);
-    
-  //for first time setup
-  //  index.write(90);
-  //  middle.write(90);
-  //  ring.write(90);
-  //  pinky.write(90);
-  //  thumb.write(90);
+
+  index.write(90);
+  middle.write(90);
+  ring.write(90);
+ // pinky.write(90);
+ // thumb.write(90);
       
 }
 
 
 void loop() {
-//   //put your main code here, to run repeatedly:
-//   openHand();
-//   delay(3000);
-//   closeHand();
-//   delay(3000);
-//   openHand();
-//   delay(3000);
-//   thumbsUp();
-//   delay(3000);
+  index.write(180);
+  delay(2000);
+  middle.write(180);
+  delay(2000);
+  ring.write(180);
+  delay(2000);
+  index.write(0);
+  delay(2000);
+  middle.write(0);
+  delay(2000);
+  ring.write(0);
+  delay(2000);
   
 }
 
@@ -74,7 +76,6 @@ void peace(){
   middle.write(0);
   ring.write(180);
   pinky.write(180);
-  thumb2.write(180);
   thumb.write(180);
 }
 
